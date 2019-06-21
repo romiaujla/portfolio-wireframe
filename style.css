@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+}
+body, p, div, nav, header, section{
+    padding: 0;
+    margin: 0;
+}
+.top-menu-section{
+    padding: 10px;
+    text-align: center;
+    background: #e0e0e0;
+    position: fixed;
+    width: 100%;
+}
