@@ -11,13 +11,16 @@ main{
 li{
   list-style: none;
 }
+a{
+  text-decoration: none;
+}
 
 /* Top Menu Style */
 .menu{
   display: none;
 }
 .header-section{
-  background: lightgray;
+  background: gray;
   position: fixed;
   width: 100%;  
 }
@@ -33,13 +36,14 @@ li{
 }
 .mobile-menu-button{
   border:none;
-  background: lightgray;
+  background: gray;
   margin: 20px;
 }
 .mobile-menu-list{
   display: none;
 }
 .hero-section{
+  text-transform: uppercase;
   padding: 12%;
 }
 .hero-wrapper{
@@ -54,8 +58,15 @@ li{
   background: lightgray;
   padding: 20px;
 }
+.projects{
+  margin-bottom: 70px;
+}
+.projects:last-child{
+  margin-bottom: 30px;
+}
 .projects img{
   width: 100%;
+  padding: 10px;
   max-width: 500px;
 }
 .tools-used{
@@ -95,16 +106,31 @@ li{
   background: black;
   transition: .3s;
 }
+.project-title{
+  padding: 20px;
+}
+.project-links{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 @media only screen and (max-width: 989px){
   .project-wrapper{
     max-width: 500px;
     margin: auto;
     text-align: center;
   }
-  .project-title{
-    padding: 20px;
+  .projects{
+    display: flex;
+    flex-direction: column;
   }
-
+  .projects:nth-of-type(even) img{
+    order: 1;
+  }
+  .projects:nth-of-type(even) .project-info{
+    order: 2;
+  }
 }
 
 
@@ -126,6 +152,8 @@ li{
   .menu-list-item a{
     display: inline-block;
     padding: 15px 10px;
+    color: white;
+    text-transform: uppercase;
   }
   .project-wrapper{
     max-width: 1200px;
@@ -141,7 +169,7 @@ li{
   .project-info{
     display: flex;
     flex-direction: column;
-    max-width: 600px;
+    max-width: 500px;
     justify-content: center;
   }
 }
