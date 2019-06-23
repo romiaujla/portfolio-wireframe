@@ -73,11 +73,27 @@ li{
 .project-short-info{
   padding: 20px;
   line-height: 1.2em;
+  text-align: left;
 }
 .tools-used-header{
   border-bottom: 2px solid black;
   padding-bottom: 2px;
   margin-bottom: 10px;
+}
+.web-button{
+  border: none;
+  text-transform: uppercase;
+  background: gray;
+  color: white;
+  font-size: 0.9em;
+  font-weight: 600;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+.web-button:hover, 
+.web-button:focus{
+  background: black;
+  transition: .3s;
 }
 @media only screen and (max-width: 989px){
   .project-wrapper{
@@ -115,5 +131,17 @@ li{
     max-width: 1200px;
     margin: auto;
     text-align: center;
+    margin-bottom: 40px;
+  }
+  .projects{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .project-info{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    justify-content: center;
   }
 }
