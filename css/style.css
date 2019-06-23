@@ -49,7 +49,7 @@ fieldset{
   padding: 12%;
 }
 .hero-wrapper{
-  padding: 150px 0px;
+  padding: 100px 0px;
   text-align: center;
 }
 .hero-title{
@@ -173,9 +173,11 @@ fieldset{
 /* Teblets and smaller screens */
 @media only screen and (max-width: 989px){
   .project-wrapper{
-    max-width: 500px;
     margin: auto;
     text-align: center;
+  }
+  .projects img{
+    max-width: 100%;
   }
   .projects{
     display: flex;
