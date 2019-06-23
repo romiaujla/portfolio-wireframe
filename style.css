@@ -38,7 +38,7 @@ body, p, div, nav, header, section{
 .project-2, 
 .project-3{
     height: 600px;
-    min-width: 500px;
+    max-width: 500px;
     background: white;
     margin: 20px;
     display: flex;
@@ -54,20 +54,20 @@ body, p, div, nav, header, section{
     color:white;
 }
 .project-content{
-    width: 500px;
+    max-width: 500px;
     padding: 20px;
     font-size: .8em;
 }
 .about-me-section{
     background: gray;
     text-align: center;
-    padding: 150px;
+    padding: 150px 20px;
     color: white;
 }
 .contact-me-section{
     background: #e0e0e0;
     text-align: center;
-    padding: 150px;
+    padding: 150px 20px;
 }
 .footer-section{
     background: gray;
