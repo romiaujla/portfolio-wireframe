@@ -4,7 +4,7 @@
 }
 html, body, div, p, h1, h2, h3, h4, h5, h6,
 header, nav, section, footer, a, ul, li, span,
-main{
+main, form, fieldset, legend, input, textarea{
   padding: 0;
   margin: 0;
 }
@@ -14,7 +14,9 @@ li{
 a{
   text-decoration: none;
 }
-
+fieldset{
+  border: none;
+}
 /* Top Menu Style */
 .menu{
   display: none;
@@ -75,11 +77,28 @@ a{
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-.project-section-title{
+.project-section-title,
+.about-me-section-title,
+.contact-section-title{
   border-bottom: 2px solid black;
   display: inline-block;
   text-align:center;
   margin: 40px 0px;
+}
+.about-me-wrapper{
+  text-align: center;
+  padding: 0px 30px;
+}
+.about-me-section{
+  margin-bottom: 40px;
+}
+.bio{
+  text-align: left;
+  padding-bottom: 30px;
+}
+.about-me-links{
+  display: flex;
+  justify-content: flex-end;
 }
 .project-short-info{
   padding: 20px;
@@ -114,7 +133,44 @@ a{
   flex-direction: row;
   justify-content: space-evenly;
 }
-
+.contact-section{
+  background: lightgray;
+  text-align:center;
+  padding-bottom: 40px;
+}
+.contact-section-wrapper{
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+.contact-section-wrapper{
+  max-width: 600px;
+}
+.feedback-form{
+  padding-top:20px;
+}
+.feedback-form-label{
+  display: block;
+  text-align: left;
+  padding-top:20px;
+  padding-bottom: 5px;
+  font-weight: 600;
+}
+.feedback-form input[type='text']{
+  width: 100%;
+  padding: 10px;
+}
+.feedback-form textarea{
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.footer-section{
+  padding: 30px;
+  text-align: center;
+}
+/* Teblets and smaller screens */
 @media only screen and (max-width: 989px){
   .project-wrapper{
     max-width: 500px;
@@ -133,7 +189,7 @@ a{
   }
 }
 
-
+/* Larger Screens */
 @media only screen and (min-width: 990px){
   .mobile-menu{
     display: none;
@@ -171,5 +227,9 @@ a{
     flex-direction: column;
     max-width: 500px;
     justify-content: center;
+  }
+  .about-me-wrapper{
+    max-width: 1050px;
+    margin: auto;
   }
 }
