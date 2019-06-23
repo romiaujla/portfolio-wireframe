@@ -39,6 +39,18 @@ li{
 .mobile-menu-list{
   display: none;
 }
+.hero-section{
+  padding: 12%;
+}
+.hero-wrapper{
+  padding: 150px 0px;
+  text-align: center;
+}
+.hero-title{
+  font-size: 2em;
+  padding: 10px 0px;
+}
+
 
 @media only screen and (min-width: 1200px){
   .mobile-menu{
