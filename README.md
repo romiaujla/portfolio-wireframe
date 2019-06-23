@@ -1,3 +1,2 @@
-#portfolio-wireframe
-A wireframe for the portfolio
-Live: https://romiaujla.github.io/portfolio-wireframe/
+Portfolio @ http://www.raujla.com
+Github Live Version : https://romiaujla.github.io/Portfolio/.

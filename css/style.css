@@ -1,0 +1,62 @@
+/* Default Settings */
+*{
+  box-sizing: border-box;
+}
+html, body, div, p, h1, h2, h3, h4, h5, h6,
+header, nav, section, footer, a, ul, li, span,
+main{
+  padding: 0;
+  margin: 0;
+}
+li{
+  list-style: none;
+}
+
+/* Top Menu Style */
+.menu{
+  display: none;
+}
+.header-section{
+  background: lightgray;
+  position: fixed;
+  width: 100%;  
+}
+.l1, 
+.l2, 
+.l3{
+  width: 25px;
+  height: 3px;
+  background: black;
+}
+.l2{
+  margin: 3px 0px;
+}
+.mobile-menu-button{
+  border:none;
+  background: lightgray;
+  margin: 20px;
+}
+.mobile-menu-list{
+  display: none;
+}
+
+@media only screen and (min-width: 1200px){
+  .mobile-menu{
+    display: none;
+  }
+  .menu{
+    display: block;
+  }
+  .menu-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .menu-list-item{
+    margin: 0px 40px;
+  }
+  .menu-list-item a{
+    display: inline-block;
+    padding: 15px 10px;
+  }
+}
