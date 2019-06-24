@@ -1,2 +1,1 @@
-Portfolio @ http://www.raujla.com
-Github Live Version : https://romiaujla.github.io/Portfolio/.
+Github Live Version : https://romiaujla.github.io/portfolio-wireframe/
